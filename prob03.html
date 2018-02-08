@@ -1,69 +1,37 @@
-/* === IMPORTANTE ===================================================
-No modificar estos estilos, ya que son imprescindibles para
-que la página se vea correctamente.
-================================================================== */
-/*-- Básico ----------------------------------------------------------*/
-ul, ul li { margin: 0; padding: 0; list-style: none; }
-h1, h2, h3, p, form { margin: 0; padding: 0; }
-.clear { clear: both; }
-img { border: none; }
-/*-- Layout ----------------------------------------------------------*/
-#contenedor {
-width: 90%;
-max-width: 900px;
-width: expression(document.body.clientWidth > 901? "900px": "auto");
-margin: 0 auto;
-}
-#cabecera, #menu, #lateral, #contenido, #contenido #principal, #contenido #secundario,
-#pie {
-border: 2px solid #777;
-}
-#cabecera { clear: both; }
-#menu { clear: both; }
-#lateral { float: left; width: 20%; }
-#contenido { float: right; width: 78%; }
-#contenido #principal { float: left; width: 78%; }
-#contenido #secundario { float: right; width: 20%; }
-Introducción a CSS Capítulo 16. Ejercicios resueltos
-www.librosweb.es 217
-#pie { clear: both; }
-/*-- Cabecera --------------------------------------------------------*/
-#cabecera #logo { float: left; }
-#cabecera #buscador { float: right; }
-/*-- Menu ------------------------------------------------------------*/
-#menu ul#menu_principal li { display: inline; float: left; }
-/*-- Sección Principal -----------------------------------------------*/
-#contenido #principal .articulo img { width: 100px; float: left; }
-/*-- Pie de página ---------------------------------------------------*/
-#pie .enlaces { float: left; }
-#pie .copyright { float: right; }
-/* === IMPORTANTE ===================================================
-A partir de aquí, se pueden añadir todos los estilos propios que
-sean necesarios.
-================================================================== */
-#cabecera,
-#menu,
-#lateral,
-#lateral #noticias,
-#lateral #publicidad,
-#contenido,
-#contenido #principal,
-#contenido #secundario,
-#pie {
-padding: .5em;
-}
-#lateral {
-padding: 0;
-}
-#cabecera {
-padding: 1em;
-}
-#menu {
-margin-bottom: .5em;
-}
-#contenido {
-width: 77%;
-padding: 0;
-}
-#contenido #principal {
-w
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/
+xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> Introducción a CSS Capítulo 16. Ejercicios resueltos www.librosweb.es 222
+    <title>Ejercicio posicionamiento float</title>
+    <style type="text/css">
+        div#paginacion {
+            border: 1px solid #CCC;
+            background-color: #E0E0E0;
+            padding: .5em;
+        }
+
+        .derecha {
+            float: right;
+        }
+
+        .izquierda {
+            float: left;
+        }
+
+        div.clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="paginacion">
+        <span class="izquierda">&laquo; Anterior</span> <span class="derecha">Siguiente
+&raquo;</span>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>
